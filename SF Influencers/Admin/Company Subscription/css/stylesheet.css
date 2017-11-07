@@ -1,0 +1,44 @@
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+
+.logo{
+	text-align: center;
+}
+table.admin-table-first{
+	width: 550px;
+	text-align: left;
+}
+table.admin-table-second{
+	margin-top: 18px;
+	width: 526px;
+	text-align: left;
+}
+@media screen and (max-width: 767px){
+	table.admin-table-first,
+	table.admin-table-second{
+		border: none;
+	}
+}
+@media screen and (max-width: 550px){
+	table.admin-table-first,
+	table.admin-table-second{
+		width: 100%;
+	}
+	table.admin-table-first tr>td,
+	table.admin-table-second tr>td{
+		padding: 0 10px;
+	}
+	.message p{
+		padding: 0 10px;
+	}
+}
