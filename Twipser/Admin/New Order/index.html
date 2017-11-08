@@ -2,18 +2,22 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Twipser - New Order</title>
-        <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../../../vendor/bootstrap/css/bootstrap.min.css">
     </head>
 
     <body>
-        <div style="background-color:#fff;margin:0 auto 0 auto;padding:30px 0 30px 0;color:#4f565d;font-size:13px;line-height:20px;font-family:&#39;Helvetica Neue&#39;,Arial,sans-serif;text-align:left;">
+        <div style="background-color:#fff;margin:0 auto 0 auto;padding:30px 0 30px 0;color:#4f565d;font-size:13px;line-height:20px;font-family:&#39;Helvetica Neue&#39;,Arial,sans-serif;text-align:left;overflow: hidden;">
             <center>
-                <table style="width:550px;text-align:center">
+                <table class="table-responsive admin-table-first">
                     <tbody>
                         <tr>
-                            <td style="padding:0 0 20px 0;border-bottom:1px solid #e9edee;">
+                            <td class="logo" style="padding:0 0 20px 0;border-bottom:1px solid #e9edee;">
                                 <a href="https://www.twipser.com" style="display:block; margin:0 auto;" target="_blank">
                                     <img src="./img/logo.png" width="144" alt="Twipser Logo" style="border: 0px;">
                                 </a>
@@ -28,7 +32,7 @@
                     </tbody>
                 </table>
                         
-                        <table style="width:526px; text-align: center; margin-left: auto; margin-right: auto;">
+                        <table class="table-responsive admin-table-second">
                             <tbody>
                                 <tr>
                                     <td colspan="2">
@@ -136,7 +140,7 @@
                                     <td style="text-align: left;">
                                         <p><b>Order number</b></p></td>
                                     
-                                    <td style="text-align:right; vertical-align: top; padding-left:108px;">
+                                    <td class="orange" style="text-align:right; vertical-align: top; padding-left:108px;">
                                         <p style="text-align: left;"><a style="text-decoration: none; color:#ff7600;" href="#">10703035025197</a></p>
                                     </td>
                                 </tr>
@@ -174,7 +178,41 @@
                         </table> 
             </center>
         </div>
-
+        
+        <style>
+            .logo{
+                text-align: center;
+            }
+            table.admin-table-first{
+                width: 550px;
+                text-align: center;
+            }
+            table.admin-table-second{
+                width: 526px;
+                text-align: left;
+            }
+            @media screen and (max-width: 767px){
+                table.admin-table-first,
+                table.admin-table-second{
+                    border: none;
+                }
+            }
+            @media screen and (max-width: 550px){
+                table.admin-table-first,
+                table.admin-table-second{
+                    width: 100%;
+                }
+                table.admin-table-second tr>td{
+                    padding: 0 10px;
+                }
+                table.admin-table-second tr>td>p{
+                    padding-left: 0!important;
+                }
+                .orange{
+                    padding-left: 10px!important;
+                }
+            }
+        </style>
     
     </body>
 </html>

@@ -2,15 +2,19 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>SF Influencers - We've got your application!</title>
+        
         <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
-
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../../../vendor/bootstrap/css/bootstrap.min.css">
     </head>
 
     <body>
-        <div style="background-color:#fff;margin:0 auto 0 auto;padding:30px 0 30px 0;color:#4f565d;font-size:13px;line-height:20px;font-family:&#39;Helvetica Neue&#39;,Arial,sans-serif;text-align:left;">
+        <div style="background-color:#fff;margin:0 auto 0 auto;padding:30px 0 30px 0;color:#4f565d;font-size:13px;line-height:20px;font-family:&#39;Helvetica Neue&#39;,Arial,sans-serif;text-align:left;overflow: hidden;">
             <center>
-                <table style="width:550px;text-align:center">
+                <table class="table-responsive company-table-first">
                     <tbody>
                         <tr>
                             <td style="padding:0 0 20px 0;border-bottom:1px solid #e9edee;">
@@ -41,6 +45,29 @@
         </div>
         
         <div id="sa-extension-is-installed"></div>
-    
+        
+        <style>
+            .logo{
+                text-align: center;
+            }
+            table.company-table-first{
+                width: 550px;
+                text-align: center;
+            }
+            @media screen and (max-width: 767px){
+                table.company-table-first{
+                    border: none;
+                }
+            }
+            @media screen and (max-width: 550px){
+                table.company-table-first{
+                    width: 100%;
+                }
+                table.company-table-first tr>td{
+                    padding: 0 10px;
+                }
+            }
+        </style>
+
     </body>
 </html>
